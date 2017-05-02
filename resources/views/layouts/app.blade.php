@@ -25,8 +25,10 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    &nbsp;@if(!Auth::guest())
-                        <li class="dropdown">
+                  @if (Auth::guest())
+                  &nbsp;
+                  @else
+                      <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" role="button">Characters<span
                                         class="caret"></span></a>
                             <ul class="dropdown-menu">
