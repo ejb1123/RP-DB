@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//use \Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -19,3 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('characters','CharacterController@index')->name('characterIndex');
+Route::get('characters/create','CharacterController@create');
+Route::post('characters/create','CharacterController@store');

@@ -30,7 +30,7 @@
                             <a class="dropdown-toggle" data-toggle="dropdown" role="button">Characters<span
                                         class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="">List</a></li>
+                                <li><a href="{{url('/characters')}}" >List</a></li>
                                 <form><input type="text" class="form-control" placeholder="Fuzzy Search"></form>
                             </ul>
                         </li>
@@ -42,6 +42,7 @@
                                 <li><a href="">List</a></li>
                                 <form><input type="text" class="form-control" placeholder="Fuzzy Search"></form>
                             </ul>
+                        </li>
 
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" role="button">Incidents<span
