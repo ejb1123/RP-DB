@@ -45,7 +45,13 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new User();
+        $user['name'] = $request['name'];
+        $user['email'] = $request['email'];
+        $user['password'] = bcrypt($request['password']);
+        $user['steam_id'] = $request['steam_id'];
+        $user->save();
+        return Response($user);
     }
 
     /**
