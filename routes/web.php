@@ -18,6 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('characters','CharacterController@index')->name('characterIndex');
-Route::get('characters/create','CharacterController@create');
-Route::post('characters/create','CharacterController@store');
+Route::get('/characters','CharacterController@index')->name('characterIndex');
+Route::get('/characters/create','CharacterController@create');
+Route::post('/characters/create','CharacterController@store');
+Route::get('/users','UserController@index')->name('usersIndex');
+Route::get('/users/create','UserController@create')->name('usersCreate');
+Route::get('/users/store','UserController@store')->name('usersStore');
