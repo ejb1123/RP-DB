@@ -8,18 +8,18 @@ class CharacterCreateForm extends Form
 {
     public function buildForm()
     {
-        $this->add('Prefix', 'text')
-            ->add('First Name', 'text')
-            ->add('Middle Name', 'text')
-            ->add('Last Name')
+        $this->add('prefix', 'text')
+            ->add('first_name', 'text')
+            ->add('middle_name', 'text')
+            ->add('last_name')
             ->add('suffix', 'text')
-            ->add('Birth Date', 'date')
-            ->add('Eye Colot', 'text')
-            ->add('Hair Style', 'text')
-            ->add('Hair Color', 'text')
-            ->add('Gender', 'select', ['choices' => ['Male', 'Female']])
-            ->add('Height', 'text')
-            ->add('Weight', 'text')
+            ->add('birth_date', 'date')
+            ->add('eye_color', 'text')
+            ->add('hair_style', 'text')
+            ->add('hair_color', 'text')
+            ->add('gender', 'select', ['choices' => ['Male', 'Female']])
+            ->add('height', 'text')
+            ->add('weight', 'text')
             ->add('submit_form', 'submit');
     }
 }
