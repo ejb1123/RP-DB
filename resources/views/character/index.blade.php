@@ -15,6 +15,16 @@
                 <th>DOB</th>
                 <th>ID</th>
             </tr>
+                @foreach($data as $user)
+                <tr>
+                    <td></td>
+                    <td>{{$user->last_name}}</td>
+                    <td>{{$user->first_name}}</td>
+                    <td>{{$user->birth_date}}</td>
+                    <td>{{$user->id}}</td>
+                </tr>
+                @endforeach
+
         </table>
     </div>
 @endsection
